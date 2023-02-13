@@ -1,0 +1,28 @@
+:root {
+  --brand-color-dark: #2e2f42;
+  --brand-color-white: #f4f4fd;
+  --brand-color-logo: #4d5ae5;
+  --hover-color-link: #404bbf;
+  --sub-text-label: #8e8f99;
+  --text-description: #434455;
+  --hero-grad: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+  --delay-hover: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 428px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* =========BENEFITS======== */
+  .benefits-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+  .section-subtitle {
+    text-align: center;
+  }
+  /* =========CUSTOMERS===== */
+
+  /* =========FOOTER======== */
+}

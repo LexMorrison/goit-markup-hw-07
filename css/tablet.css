@@ -1,0 +1,179 @@
+:root {
+  --brand-color-dark: #2e2f42;
+  --brand-color-white: #f4f4fd;
+  --brand-color-logo: #4d5ae5;
+  --hover-color-link: #404bbf;
+  --sub-text-label: #8e8f99;
+  --text-description: #434455;
+  --hero-grad: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+  --delay-hover: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  /* =======HEADER========*/
+  .page-header {
+    padding-bottom: 10px;
+  }
+
+  .page-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-open-mob {
+    display: none;
+  }
+
+  .contact {
+    margin-left: 0;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .menu {
+    margin-left: 120px;
+    display: flex;
+    gap: 40px;
+  }
+  .menu-link {
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--brand-color-dark);
+    margin-bottom: 28px;
+    transition: color var(--delay-hover);
+  }
+  .menu-link:hover,
+  .menu-link:focus {
+    color: var(--hover-color-link);
+  }
+
+  .current {
+    color: var(--hover-color-link);
+    position: relative;
+    padding-bottom: 27px;
+  }
+
+  .current::after {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--hover-color-link);
+  }
+
+  .contact-link {
+    font-style: normal;
+    line-height: 1.5;
+    color: #434455;
+    transition: color var(--delay-hover);
+  }
+
+  .contact-link:hover,
+  .contact-link:focus {
+    color: var(--brand-color-logo);
+  }
+  /* =========HERO======== */
+  .hero {
+    background-image: var(--hero-grad), url(../images/hero/hero_tablet_1x.jpg);
+    padding-top: 112px;
+    padding-bottom: 108px;
+    margin: 0 auto;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--hero-grad), url(../images/hero/hero_tablet_2x.jpg);
+    }
+  }
+  .hero-title {
+    margin-bottom: 40px;
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+  /* =========BENEFITS======== */
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .benefits-item {
+    max-width: 356px;
+  }
+
+  /* =========TEAM======== */
+  .team-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 64px 24px;
+  }
+  /* =========CUSTOMERS===== */
+  .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    justify-content: center;
+  }
+  .customers-link {
+    width: 168px;
+  }
+  /* =========FOOTER======== */
+
+  .footer-form {
+    justify-content: start;
+  }
+  .footer-left {
+    margin-right: 24px;
+  }
+  .footer-pos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .footer-left > .logotype {
+    justify-content: start;
+  }
+
+  .soc-media-subtitle {
+    justify-content: start;
+  }
+  .footer-form-label {
+    justify-content: start;
+  }
+
+  .footer-form-input {
+    width: 264px;
+  }
+
+  .footer-form-wrapper {
+    display: flex;
+  }
+  .footer-form-button {
+    margin-left: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-pos {
+    padding-left: 92px;
+  }
+}

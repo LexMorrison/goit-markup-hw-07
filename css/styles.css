@@ -71,14 +71,6 @@ img {
   padding-bottom: 96px;
 }
 
-.section-subtitle {
-  font-size: 36px;
-  line-height: 1.11;
-
-  text-transform: capitalize;
-  color: var(--brand-color-dark);
-}
-
 .section-description {
   line-height: 1.5;
   color: var(--text-description);
@@ -165,23 +157,6 @@ img {
   color: var(--hover-color-link);
 }
 
-.current {
-  color: var(--hover-color-link);
-  position: relative;
-  padding-bottom: 27px;
-}
-
-.current::after {
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  content: "";
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--hover-color-link);
-}
-
 .contact-link {
   font-style: normal;
   line-height: 1.5;
@@ -237,6 +212,10 @@ img {
   transition: color(--delay-hover);
 }
 
+.current-mob {
+  color: var(--hover-color-link);
+}
+
 .mobile-menu-link:focus {
   color: var(--brand-color-logo);
 }
@@ -265,7 +244,7 @@ img {
 
 .team-soc-list-mobile {
   display: flex;
-  justify-content: center;
+
   gap: 56px;
   justify-content: start;
 }
@@ -329,6 +308,11 @@ img {
 /* =========BENEFITS======== */
 
 .benefits-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--brand-color-dark);
   margin-bottom: 8px;
 }
 
@@ -375,15 +359,6 @@ img {
   gap: 72px;
 }
 
-.section-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--brand-color-dark);
-}
-
 .team-text {
   margin-bottom: 8px;
 }
@@ -414,7 +389,7 @@ img {
 }
 
 /* =========PORTFOLIO======== */
-/* .portfolio {
+.portfolio {
   padding-top: 96px;
 }
 
@@ -488,7 +463,7 @@ img {
   height: 100%;
   transform: translateY(100%);
   transition: transform var(--delay-hover);
-} */
+}
 
 /* =========CUSTOMERS===== */
 .customers-title {
@@ -533,7 +508,6 @@ img {
 .footer {
   padding-top: 96px;
   padding-bottom: 96px;
-  display: flex;
   justify-content: center;
   background-color: var(--brand-color-dark);
 }
@@ -550,11 +524,15 @@ img {
   margin-bottom: 16px;
 }
 
+.footer-left {
+  margin: 0 auto 72px;
+}
+
 .footer-text {
   line-height: 1.5;
   color: #e7e9fc;
   max-width: 264px;
-  margin: 0 auto 72px;
+  margin: 0 auto;
 }
 
 .logo-white {
@@ -571,11 +549,14 @@ img {
   margin-bottom: 16px;
 }
 
+.footer-right {
+  margin-bottom: 72px;
+}
+
 .soc-media-list {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 72px;
 }
 
 .soc-media-link {
@@ -614,7 +595,7 @@ img {
   padding-left: 16px;
   color: #ffff;
   display: block;
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
 }
 
 .footer-form-button {

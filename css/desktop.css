@@ -13,9 +13,7 @@
     padding-top: 120px;
     padding-bottom: 120px;
   }
-  .page-header {
-    padding: 24px 0;
-  }
+
   .container {
     width: 1160px;
   }
@@ -33,7 +31,7 @@
     transition: color var(--delay-hover);
   }
   .current::after {
-    bottom: -1px;
+    bottom: 7px;
   }
 
   /* =========HERO======== */
@@ -91,6 +89,7 @@
   }
   .work-section {
     padding-bottom: 120px;
+    display: block;
   }
   .work-list {
     display: flex;
@@ -118,6 +117,10 @@
   .footer-pos {
     flex-wrap: nowrap;
     align-items: normal;
+  }
+
+  .footer-left {
+    margin: 0;
   }
 
   .footer-right {

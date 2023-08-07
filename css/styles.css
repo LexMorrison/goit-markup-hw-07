@@ -431,6 +431,7 @@ img {
 }
 
 .gallery-container {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
@@ -513,9 +514,9 @@ img {
 }
 /* =========FOOTER======== */
 .footer {
-  padding-top: 96px;
-  padding-bottom: 96px;
-  justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
   background-color: var(--brand-color-dark);
 }
 
@@ -634,6 +635,53 @@ img {
   right: 24px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.footer.foot-cont {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-pos.container.portf-foot {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: normal;
+}
+
+.footer-left.portf-left {
+  margin: 0;
+}
+
+.footer-left.portf-left > .logotype.portf-logo {
+  display: block;
+}
+
+.footer-right.portf-right {
+  margin-left: 120px;
+}
+
+.footer-text.portf-text {
+  margin-bottom: 0;
+  width: 264px;
+}
+
+.footer-form.portf-foot {
+  margin-left: 80px;
+  display: block;
+}
+
+.footer-form-label.potf-label {
+  display: block;
+}
+
+.footer-form-wrapper.portf-wrap {
+  display: flex;
+}
+
+.footer-form-button.foot-sub {
+  margin-left: 24px;
 }
 
 /* ========BACKDROP============ */
